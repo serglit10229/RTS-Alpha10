@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.AIå;
 using UnityEngine;
 
 public class FormationController : MonoBehaviour {
@@ -91,7 +92,7 @@ public class FormationController : MonoBehaviour {
             foreach (GameObject unit in units)
             {
                 unit.GetComponent<PlayerController>().army = true;
-                unit.GetComponent<PlayerController>().armyMove = (new Vector3(cX, 0f, cY)) * spacing;
+                unit.GetComponent<PlayerController>().armyMove = (new Vector3(cX, 0f, cY)) * (unit.GetComponent<UnityEngine.AI.NavMeshAgent>().radius * 5);
                 if(cX <= formWidth)
                 {
                 	cX++;
