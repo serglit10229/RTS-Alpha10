@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.AIå;
+using UnityEngine.AI;
 using UnityEngine;
 
 public class FormationController : MonoBehaviour {

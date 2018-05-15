@@ -137,6 +137,7 @@ public class BuildManager: MonoBehaviour
                         ghost.GetComponent<CastlePlayer>().pb.SetActive(false);
                     }
                     ghostCollision = ghost.AddComponent<BuildingCollision>();
+                    //ghost.GetComponent<Collider>
 					ghostOn = true;	
 				}
 	
