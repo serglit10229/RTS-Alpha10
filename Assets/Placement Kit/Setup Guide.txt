@@ -1,0 +1,69 @@
+////////////////////////////////////////////////////////////////
+////// How to use the 'Objects / Building Placement Kit' ///////
+////////////////////////////////////////////////////////////////
+////// by Tobias Lenz ////////////////////////Version 1.0///////
+////////////////////////////////////////////////////////////////
+
+ What the Kit does:
+ ------------------
+ It checks for collision on the Terrain and with other objects (other buildings ect.),
+ it also checks the height above the ground of the building.
+ If a collision happens with other objects or the slope is to high the building is 
+ RED highlighted and don't let you place the building.
+ If it don't collide with other objects the building is
+ GREEN highlighted and let you place the building.
+ Every placed Building will be put in a public List with the
+ Name of "buildings" which contains the GameObject and the Name
+ as string without "(Clone)".
+ 
+ You can configure in the Inspector the Max Slope Height,
+ your array of different Objects / Buildings, the Selected Building Index,
+ the Terrain Collision Tag.
+ 
+ The Scripts are easily modified and they are self explanatory.
+
+
+ Step 1:
+ -------
+ Create or Use a Existing Prefab of your Objects / Buildings.
+ Use any Collider you like for your Objects / Buildings.
+ And add a "Rigidbody" to them.
+ In your Objects / Buildings "Ridgidbody" Freeze the "Rotation" and "Position"
+ or your Objects / Buildings can bounce and move around.
+
+ Step 2:
+ -------
+ Add a "Rigidbody" to your Terrain.
+ In your Terrain "Ridgidbody" Freeze the "Rotation" and "Position"
+ or your Terrain can bounce and move around.
+ Set your Terrain Tag to (Your preferred Tag) example: "Floor".
+
+ Step 3:
+ -------
+ Add the "BuildManager" Prefab to your Scene
+
+ Step 4:
+ -------
+ In the "BuildManager" this are the settings:
+ 
+ Selected Building: Is a Int which represents the Object / Building that's placed.
+ Building -> Size: The total number of your different Objects / Buildings you want to use.
+ Building -> Element: This is a GameObject Array in which you drag your Objects / Building
+						Prefabs.
+ Max Slope High: Here you can change the Max height difference between 
+					  your Objects / Buildings and the ground.
+ BuildingList: This variable don't show up in the Inspector but is a public variable
+				 which contains a List with the placed Objects / Buildings Names + GameObjects.
+
+ Set the "Terrain Collision Tag" to the Tag you given your Terrain.
+ Drag your Object / Building Prefabs into the Element slots. The number behind the element
+ represent the index in the Array and the "Selected Building" Index uses this index as well.
+
+ Step 5:
+ -------
+ Enjoy, it is all SetUp and ready to use.
+
+ NOTE:
+ ------
+ There is no buildin selected building switch script, you have to implement your own or take code from the Example Project GUIScript.
+
