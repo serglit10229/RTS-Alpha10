@@ -310,7 +310,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4793047296654068}
   - component: {fileID: 33381354055535720}
-  - component: {fileID: 65317078377332648}
   - component: {fileID: 23268357774148752}
   - component: {fileID: 208231956789889732}
   m_Layer: 0
@@ -518,7 +517,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1954878141498046
 GameObject:
   m_ObjectHideFlags: 1
@@ -618,7 +617,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1952628728651528}
   m_LocalRotation: {x: -0, y: -0, z: -1.4782027e-17, w: 1}
-  m_LocalPosition: {x: 0, y: -0.428, z: 0}
+  m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 4, y: 0.00044444445, z: 4}
   m_Children: []
   m_Father: {fileID: 4526965762192370}
@@ -837,7 +836,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1340632223231196}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.277451, y: 4.4975247, z: 44.412518}
+  m_LocalPosition: {x: 12.277451, y: 4.4975247, z: -34.2}
   m_LocalScale: {x: 4.5, y: 4.5, z: 4.5}
   m_Children:
   - {fileID: 4416252710579230}
@@ -1719,7 +1718,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100002, guid: 5f08a76d2a589634ba63c1aac94d48d1, type: 3}
+  - {fileID: 2100000, guid: 856bc60d8b20e7f44afda7e45f306808, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1961,18 +1960,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.9803314, y: 2.0853226, z: 4.390165}
   m_Center: {x: 0.014883254, y: 0.5300681, z: 0.22946548}
---- !u!65 &65317078377332648
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1509697604176106}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 40, z: 1}
-  m_Center: {x: 0, y: 20, z: 0}
 --- !u!95 &95259677157063268
 Animator:
   serializedVersion: 3
@@ -2028,6 +2015,7 @@ MonoBehaviour:
   queue: []
   buildTime: 5
   testClick: 0
+  startDest: {x: 0, y: 0, z: 0}
 --- !u!114 &114492406604708072
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2131,6 +2119,7 @@ MonoBehaviour:
   queue: []
   buildTime: 0
   testClick: 1
+  startDest: {x: 0, y: 0, z: 0}
 --- !u!114 &114797240508983394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2182,6 +2171,7 @@ MonoBehaviour:
   BuildGuide: {fileID: 1952628728651528}
   yoff: 0
   pb: {fileID: 1502617843993374}
+  selected: 0
   overlap: 0
 --- !u!137 &137024137382168824
 SkinnedMeshRenderer:

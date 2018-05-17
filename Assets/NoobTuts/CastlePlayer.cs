@@ -9,12 +9,34 @@ public class CastlePlayer : MonoBehaviour {
 
     public GameObject pb;
 
+    public bool selected = false;
 
     public bool overlap = false;
-    void OnMouseDown() {
-        // use UnitSpawner
+    Camera cam;
 
-        //GetComponent<UnitSpawner>().Spawn();
+    void Start()
+    {
+        cam = Camera.main;
+    }
+
+    void Update()
+    {
+        if (selected == true)
+        {
+            // If we press left mouse
+            if (Input.GetMouseButtonDown(1))
+            {
+                // We create a ray
+                Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+
+                // If the ray hits
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+                {
+                    GetComponent<UnitSpawner>().startDest = hit.point;
+                }
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)

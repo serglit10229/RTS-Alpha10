@@ -92,7 +92,7 @@ public class FormationController : MonoBehaviour {
             foreach (GameObject unit in units)
             {
                 unit.GetComponent<PlayerController>().army = true;
-                unit.GetComponent<PlayerController>().armyMove = (new Vector3(cX, 0f, cY)) * (unit.GetComponent<UnityEngine.AI.NavMeshAgent>().radius * 5);
+                unit.GetComponent<PlayerController>().armyMove = new Vector3(cX - (formWidth/2), 0f, cY - (formHeight/2)) * spacing;
                 if(cX <= formWidth)
                 {
                 	cX++;

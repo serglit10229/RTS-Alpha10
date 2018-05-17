@@ -45,6 +45,8 @@ public class BuildManager: MonoBehaviour
 
     public bool overlap = false;
 
+    public Shader BuildGuide;
+
     // Unused until fully implemented
    // public Snapping snapping = new Snapping();
 
@@ -143,6 +145,20 @@ public class BuildManager: MonoBehaviour
 	
 				if (ghost != null)
 				{
+                    if(!ghostCollision.Collided() && isFlat && ghost.GetComponent<CastlePlayer>().overlap == false)
+                    {
+                        Renderer rend = ghost.GetComponent<CastlePlayer>().BuildGuide.GetComponent<Renderer>();
+                        rend.material.shader = BuildGuide;
+                        rend.material.SetColor("_Color", Color.green);
+                    }
+                    else
+                    {
+                        Renderer rend = ghost.GetComponent<CastlePlayer>().BuildGuide.GetComponent<Renderer>();
+                        rend.material.shader = BuildGuide;
+                        rend.material.SetColor("_Color", Color.red);
+                    }
+
+
                     if (Input.GetMouseButtonDown(0) && !ghostCollision.Collided() && isFlat && ghost.GetComponent<CastlePlayer>().overlap == false)
                     {
                         

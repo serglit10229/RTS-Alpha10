@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.AI;
 using UnityEngine;
 
 /* Controls the player. Here we choose our "focus" and where to move. */
@@ -27,6 +28,8 @@ public class PlayerController : MonoBehaviour
     public float airSpeed;
     public float airRotationSpeed;
     public bool airMove = false;
+
+    public bool spawnDest = false;
     Camera cam;         // Reference to our camera
     PlayerMotor motor;  // Reference to our motor
 
@@ -59,6 +62,10 @@ public class PlayerController : MonoBehaviour
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity, movementMask))
                 {
                     dest = hit.point;
+                    if(GetComponent<NavMeshAgent>().enabled == false)
+                    {
+                        GetComponent<NavMeshAgent>().enabled = true;
+                    }
                     Instantiate(destPoint, dest, Quaternion.identity);
                     if (army == true)
                     {
@@ -92,6 +99,16 @@ public class PlayerController : MonoBehaviour
                     }
 
 
+                }
+            }
+
+            if(spawnDest == true)
+            {
+                Debug.Log(gameObject.name + Vector3.Distance(transform.position, GetComponent<NavMeshAgent>().destination));
+                if(Vector3.Distance(transform.position, GetComponent<NavMeshAgent>().destination) < 10)
+                {
+                    GetComponent<NavMeshAgent>().enabled = false;
+                    spawnDest = false;
                 }
             }
 

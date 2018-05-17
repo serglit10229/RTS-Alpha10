@@ -94,7 +94,14 @@ public class PlayerSelection : MonoBehaviour {
         circle.SetActive(true);
         //tc.GetComponent<Count>().selectedUnits++;
         if(BotFactoryT1 != true && TankFactoryT1 != true)
+        {
             GetComponent<PlayerController>().selected = true;
+        }
+
+        if(BotFactoryT1 == true || TankFactoryT1 == true)
+        {
+            GetComponent<CastlePlayer>().selected = true;
+        }
 
 		if (BotFactoryT1 == true && !UM.BotFactory.Contains(gameObject)) 
 		{

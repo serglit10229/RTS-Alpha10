@@ -41,8 +41,21 @@ public class UnitSpawner : MonoBehaviour
 
     public bool testClick = true;
 
+    public GameObject rallyPoint;
+
+
+    public Vector3 startDest;
+    public GameObject rally;
+
+    private void Start()
+    {
+        startDest = new Vector3(0,-2.5f,10) + transform.position;
+        rally = Instantiate(rallyPoint, startDest, Quaternion.identity);
+    }
+
     private void Update()
     {
+        rally.transform.position = startDest + new Vector3(0,0.05f,0);
     	if(queue.Count >= 1 && timerIsRunning != true)
             StartCoroutine("Timer", 5);
         if (timerIsRunning == true)
@@ -78,7 +91,10 @@ public class UnitSpawner : MonoBehaviour
     public void Spawn(GameObject unit)
     {
     	Vector3 pos = transform.position;
-        Instantiate(unit, new Vector3(x + pos.x, y + pos.y, z + pos.z), Quaternion.Euler(0.0f, 0.0f, 0.0f));
+        GameObject g = Instantiate(unit, new Vector3(x + pos.x, y + pos.y, z + pos.z), Quaternion.Euler(0.0f, 0.0f, 0.0f));
+
+        g.GetComponent<NavMeshAgent>().SetDestination(startDest);
+        g.GetComponent<PlayerController>().spawnDest = true;
         queue.Remove(queue[0]);	
     }
 
