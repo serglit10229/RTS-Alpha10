@@ -125,11 +125,8 @@ public class BuildManager: MonoBehaviour
 				
 				if (!ghostOn)
 				{
-					ghost = (GameObject)Instantiate(Building[SelectedBuilding], 
-					new Vector3(hit[i].point.x,
-						hit[i].point.y, 
-						hit[i].point.z), 
-						Quaternion.identity);
+                    
+					ghost = (GameObject)Instantiate(Building[SelectedBuilding], new Vector3(hit[i].point.x, hit[i].point.y, hit[i].point.z), Quaternion.identity);
 
                     ghost.name = ghost.name.Replace("(Clone)", "(Ghost)");
                     ghost.layer = 2; //ignore raycast layer

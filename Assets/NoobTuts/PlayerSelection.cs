@@ -130,6 +130,11 @@ public class PlayerSelection : MonoBehaviour {
         if (BotFactoryT1 != true && TankFactoryT1 != true)
             GetComponent<PlayerController>().selected = false;
 
+        if(BotFactoryT1 == true || TankFactoryT1 == true)
+        {
+            GetComponent<CastlePlayer>().selected = false;
+        }
+
         if (BotFactoryT1 == true && UM.BotFactory.Contains(gameObject)) 
 		{
             UM.BotFactory.Remove(gameObject);

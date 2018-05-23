@@ -21,8 +21,10 @@ public class CastlePlayer : MonoBehaviour {
 
     void Update()
     {
+        GetComponent<UnitSpawner>().selected = selected;
         if (selected == true)
         {
+            GetComponent<UnitSpawner>().rally.SetActive(true);
             // If we press left mouse
             if (Input.GetMouseButtonDown(1))
             {
@@ -36,6 +38,10 @@ public class CastlePlayer : MonoBehaviour {
                     GetComponent<UnitSpawner>().startDest = hit.point;
                 }
             }
+        }
+        else
+        {
+            GetComponent<UnitSpawner>().rally.SetActive(false);
         }
     }
 

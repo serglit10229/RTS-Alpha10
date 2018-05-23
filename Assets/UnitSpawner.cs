@@ -46,10 +46,12 @@ public class UnitSpawner : MonoBehaviour
 
     public Vector3 startDest;
     public GameObject rally;
+    public bool selected = false;
+    public Vector3 spawnOff = new Vector3(0,-2.25f,10);
 
     private void Start()
     {
-        startDest = new Vector3(0,-2.5f,10) + transform.position;
+        startDest = spawnOff + transform.position;
         rally = Instantiate(rallyPoint, startDest, Quaternion.identity);
     }
 

@@ -368,7 +368,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1792680649517176}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 31.731293, y: 2.5576549, z: 13.819305}
+  m_LocalPosition: {x: 13.832863, y: 2.5576544, z: 8.469269}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 4305904781285280}
@@ -1323,9 +1323,18 @@ MonoBehaviour:
   lastPosition: {fileID: 0}
   army: 0
   armyMid: {x: 0, y: 0, z: 0}
+  armyMove: {x: 0, y: 0, z: 0}
+  finalDest: {x: 0, y: 0, z: 0}
   dest: {x: 0, y: 0, z: 0}
   thisUnit: {fileID: 1792680649517176}
   destPoint: {fileID: 1716286754887974, guid: 4b11a2c0a30e4e84686b82a798b479d7, type: 2}
+  airplane: 0
+  airSpeed: 0
+  airRotationSpeed: 0
+  airMove: 0
+  spawnDest: 0
+  spawnAvoid: 0
+  afterSpawnAvoid: 0
 --- !u!114 &114567704480632402
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1342,6 +1351,7 @@ MonoBehaviour:
   rotationSpeed: 5
   attackRange: 35
   badUnit: 1
+  hasAnimation: 0
   dirObj: {fileID: 1220388131725642}
 --- !u!114 &114995226689694514
 MonoBehaviour:

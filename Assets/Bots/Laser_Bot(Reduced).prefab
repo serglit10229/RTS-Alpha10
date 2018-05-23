@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4439480387653124}
   - component: {fileID: 33379279471741994}
-  - component: {fileID: 136786068726410466}
   - component: {fileID: 23628517371147292}
   m_Layer: 0
   m_Name: Cylinder
@@ -38,7 +37,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4044462188437330}
   - component: {fileID: 33760394357846800}
-  - component: {fileID: 136683173734316412}
   - component: {fileID: 23075016983872376}
   m_Layer: 0
   m_Name: Cylinder (1)
@@ -56,7 +54,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4048456866101226}
   - component: {fileID: 33468498779484908}
-  - component: {fileID: 136223537672136512}
   - component: {fileID: 23667289163737338}
   m_Layer: 0
   m_Name: Cylinder (1)
@@ -108,7 +105,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4919457752640506}
   - component: {fileID: 33957317134297754}
-  - component: {fileID: 136739293607683568}
   - component: {fileID: 23766277991266072}
   m_Layer: 0
   m_Name: Cylinder (1)
@@ -160,7 +156,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4696554187067714}
   - component: {fileID: 33669529351358390}
-  - component: {fileID: 136617857441290754}
   - component: {fileID: 23420967723858552}
   m_Layer: 0
   m_Name: Cylinder
@@ -268,7 +263,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4365120699445618}
   - component: {fileID: 33799694214150876}
-  - component: {fileID: 136464247117317226}
   - component: {fileID: 23674892650350564}
   m_Layer: 0
   m_Name: Cylinder
@@ -318,7 +312,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1616814639062036}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.08995, y: 1.9653734, z: 58.15136}
+  m_LocalPosition: {x: 14.132904, y: 1.9653581, z: -15.744354}
   m_LocalScale: {x: 1.1500001, y: 1.1500001, z: 1.1500001}
   m_Children:
   - {fileID: 4416360247289120}
@@ -1274,6 +1268,7 @@ MonoBehaviour:
   rotationSpeed: 5
   attackRange: 0
   badUnit: 0
+  hasAnimation: 0
   dirObj: {fileID: 0}
 --- !u!114 &114296452124572190
 MonoBehaviour:
@@ -1294,9 +1289,18 @@ MonoBehaviour:
   lastPosition: {fileID: 0}
   army: 0
   armyMid: {x: 0, y: 0, z: 0}
+  armyMove: {x: 0, y: 0, z: 0}
+  finalDest: {x: 0, y: 0, z: 0}
   dest: {x: 0, y: 0, z: 0}
   thisUnit: {fileID: 1616814639062036}
   destPoint: {fileID: 1716286754887974, guid: 4b11a2c0a30e4e84686b82a798b479d7, type: 2}
+  airplane: 0
+  airSpeed: 0
+  airRotationSpeed: 0
+  airMove: 0
+  spawnDest: 0
+  spawnAvoid: 0
+  afterSpawnAvoid: 2
 --- !u!114 &114754300123503790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1320,84 +1324,6 @@ MonoBehaviour:
   mouseClicks: 0
   doubleClickTime: 1
   selected: 0
---- !u!136 &136223537672136512
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1118041461988068}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &136464247117317226
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1748982313834988}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &136617857441290754
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1534356911094912}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &136683173734316412
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1091025824135096}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &136739293607683568
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1249431916807492}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &136786068726410466
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1083815832836040}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &195647951160862986
 NavMeshAgent:
   m_ObjectHideFlags: 1

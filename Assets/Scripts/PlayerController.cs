@@ -33,6 +33,9 @@ public class PlayerController : MonoBehaviour
     Camera cam;         // Reference to our camera
     PlayerMotor motor;  // Reference to our motor
 
+    public ObstacleAvoidanceType spawnAvoid;
+    public ObstacleAvoidanceType afterSpawnAvoid;
+
     // Get references
     void Start()
     {
@@ -49,6 +52,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(spawnDest == true)
+        {
+            Debug.Log(gameObject.name + Vector3.Distance(transform.position, GetComponent<NavMeshAgent>().destination));
+            if(Vector3.Distance(transform.position, GetComponent<NavMeshAgent>().destination) < 2)
+            {
+                GetComponent<NavMeshAgent>().ResetPath();
+                spawnDest = false;
+            }
+        }
+
         if (selected == true)
         {
             // If we press left mouse
@@ -62,10 +75,11 @@ public class PlayerController : MonoBehaviour
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity, movementMask))
                 {
                     dest = hit.point;
-                    if(GetComponent<NavMeshAgent>().enabled == false)
+                    /*
+                    if(GetComponent<NavMeshAgent>().updatePosition == false)
                     {
-                        GetComponent<NavMeshAgent>().enabled = true;
-                    }
+                        GetComponent<NavMeshAgent>().updatePosition = true;
+                    }*/
                     Instantiate(destPoint, dest, Quaternion.identity);
                     if (army == true)
                     {
@@ -102,15 +116,7 @@ public class PlayerController : MonoBehaviour
                 }
             }
 
-            if(spawnDest == true)
-            {
-                Debug.Log(gameObject.name + Vector3.Distance(transform.position, GetComponent<NavMeshAgent>().destination));
-                if(Vector3.Distance(transform.position, GetComponent<NavMeshAgent>().destination) < 10)
-                {
-                    GetComponent<NavMeshAgent>().enabled = false;
-                    spawnDest = false;
-                }
-            }
+
 
             // If we press right mouse
             if (Input.GetMouseButtonDown(1))
