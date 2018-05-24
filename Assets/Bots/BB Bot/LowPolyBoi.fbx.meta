@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: 10c1ef6bc025442a3918109e635bcc3b
+timeCreated: 1527118808
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: BaseArms
+    100002: BaseLines
+    100004: BaseSides
+    100006: BottomSidesMain
+    100008: Guns
+    100010: GunsLines
+    100012: //RootNode
+    100014: RotorBase
+    100016: RotorBottom
+    100018: RotorSides
+    100020: TopBody
+    100022: Visor
+    100024: VisorSides
+    100026: WheelBase
+    100028: Wheels1
+    100030: Wheels2
+    100032: Wheels3
+    100034: WheelSides
+    400000: BaseArms
+    400002: BaseLines
+    400004: BaseSides
+    400006: BottomSidesMain
+    400008: Guns
+    400010: GunsLines
+    400012: //RootNode
+    400014: RotorBase
+    400016: RotorBottom
+    400018: RotorSides
+    400020: TopBody
+    400022: Visor
+    400024: VisorSides
+    400026: WheelBase
+    400028: Wheels1
+    400030: Wheels2
+    400032: Wheels3
+    400034: WheelSides
+    2100000: TurretGrey
+    2100002: TurretBlue
+    2100004: TurretRed
+    2300000: BaseArms
+    2300002: BaseLines
+    2300004: BaseSides
+    2300006: BottomSidesMain
+    2300008: Guns
+    2300010: GunsLines
+    2300012: RotorBase
+    2300014: RotorBottom
+    2300016: RotorSides
+    2300018: TopBody
+    2300020: Visor
+    2300022: VisorSides
+    2300024: WheelBase
+    2300026: Wheels1
+    2300028: Wheels2
+    2300030: Wheels3
+    2300032: WheelSides
+    3300000: BaseArms
+    3300002: BaseLines
+    3300004: BaseSides
+    3300006: BottomSidesMain
+    3300008: Guns
+    3300010: GunsLines
+    3300012: RotorBase
+    3300014: RotorBottom
+    3300016: RotorSides
+    3300018: TopBody
+    3300020: Visor
+    3300022: VisorSides
+    3300024: WheelBase
+    3300026: Wheels1
+    3300028: Wheels2
+    3300030: Wheels3
+    3300032: WheelSides
+    4300000: WheelBase
+    4300002: BottomSidesMain
+    4300004: WheelSides
+    4300006: RotorBase
+    4300008: RotorSides
+    4300010: RotorBottom
+    4300012: TopBody
+    4300014: VisorSides
+    4300016: Visor
+    4300018: BaseLines
+    4300020: BaseArms
+    4300022: BaseSides
+    4300024: Wheels1
+    4300026: Wheels2
+    4300028: Wheels3
+    4300030: Guns
+    4300032: GunsLines
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,199 @@
+fileFormatVersion: 2
+guid: 58db67db9e1f1499d9958b882b1df1c6
+timeCreated: 1527117191
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: BaseArms
+    100002: BaseLines
+    100004: BaseSides
+    100006: //RootNode
+    100008: BottomSidesMain
+    100010: GunInside
+    100012: Guns
+    100014: GunSides
+    100016: RotorBase
+    100018: RotorBottom
+    100020: RotorSides
+    100022: TopBody
+    100024: Visor
+    100026: VisorSides
+    100028: WheelBase
+    100030: Wheels1
+    100032: Wheels2
+    100034: Wheels3
+    100036: WheelSides
+    400000: BaseArms
+    400002: BaseLines
+    400004: BaseSides
+    400006: //RootNode
+    400008: BottomSidesMain
+    400010: GunInside
+    400012: Guns
+    400014: GunSides
+    400016: RotorBase
+    400018: RotorBottom
+    400020: RotorSides
+    400022: TopBody
+    400024: Visor
+    400026: VisorSides
+    400028: WheelBase
+    400030: Wheels1
+    400032: Wheels2
+    400034: Wheels3
+    400036: WheelSides
+    2100000: TurretGrey
+    2100002: TurretBlue
+    2100004: TurretRed
+    2300000: BaseArms
+    2300002: BaseLines
+    2300004: BaseSides
+    2300006: BottomSidesMain
+    2300008: GunInside
+    2300010: Guns
+    2300012: GunSides
+    2300014: RotorBase
+    2300016: RotorBottom
+    2300018: RotorSides
+    2300020: TopBody
+    2300022: Visor
+    2300024: VisorSides
+    2300026: WheelBase
+    2300028: Wheels1
+    2300030: Wheels2
+    2300032: Wheels3
+    2300034: WheelSides
+    3300000: BaseArms
+    3300002: BaseLines
+    3300004: BaseSides
+    3300006: BottomSidesMain
+    3300008: GunInside
+    3300010: Guns
+    3300012: GunSides
+    3300014: RotorBase
+    3300016: RotorBottom
+    3300018: RotorSides
+    3300020: TopBody
+    3300022: Visor
+    3300024: VisorSides
+    3300026: WheelBase
+    3300028: Wheels1
+    3300030: Wheels2
+    3300032: Wheels3
+    3300034: WheelSides
+    4300000: WheelBase
+    4300002: BottomSidesMain
+    4300004: WheelSides
+    4300006: RotorBase
+    4300008: RotorSides
+    4300010: RotorBottom
+    4300012: TopBody
+    4300014: VisorSides
+    4300016: Visor
+    4300018: BaseLines
+    4300020: BaseArms
+    4300022: BaseSides
+    4300024: Guns
+    4300026: GunSides
+    4300028: GunInside
+    4300030: Wheels1
+    4300032: Wheels2
+    4300034: Wheels3
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TurretBlue
+    second: {fileID: 2100000, guid: e337f02bf95dd4ccbb264efbcc554224, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TurretGrey
+    second: {fileID: 2100000, guid: e7992082369fc4d9ea2bebdaa276a6e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TurretRed
+    second: {fileID: 2100000, guid: cff4428ae019f4c0fa799358faf3a303, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

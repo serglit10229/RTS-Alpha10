@@ -1139,6 +1139,8 @@ MonoBehaviour:
   lastPosition: {fileID: 0}
   army: 0
   armyMid: {x: 0, y: 0, z: 0}
+  armyMove: {x: 0, y: 0, z: 0}
+  finalDest: {x: 0, y: 0, z: 0}
   dest: {x: 0, y: 0, z: 0}
   thisUnit: {fileID: 1613696121417600}
   destPoint: {fileID: 1716286754887974, guid: 4b11a2c0a30e4e84686b82a798b479d7, type: 2}
@@ -1146,6 +1148,9 @@ MonoBehaviour:
   airSpeed: 35
   airRotationSpeed: 1
   airMove: 0
+  spawnDest: 0
+  spawnAvoid: 0
+  afterSpawnAvoid: 0
 --- !u!198 &198251148914675616
 ParticleSystem:
   m_ObjectHideFlags: 1

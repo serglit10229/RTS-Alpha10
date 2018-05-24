@@ -9,7 +9,7 @@ public class MoveByNpc : MonoBehaviour {
         float range = GetComponent<Attack>().range;
 
         // find all enemy units
-        string enemyTag = GetComponent<Attack>().enemyTag;
+        /*string enemyTag = GetComponent<Attack>().enemyTag;
         GameObject[] units = GameObject.FindGameObjectsWithTag(enemyTag);
         
         foreach (GameObject g in units) {
@@ -45,6 +45,6 @@ public class MoveByNpc : MonoBehaviour {
                 // tell the navmesh agent to go there
                 GetComponent<UnityEngine.AI.NavMeshAgent>().destination = dest;
             }
-        }
+        }*/
     }
 }

@@ -11,7 +11,7 @@ using System.Collections.Generic;
 [System.Serializable]
 public class Snapping
 {
-    public bool snappingEnabled = false;
+    public bool snappingEnabled = true;
     public float snapRadius = 2.0f;
     public float snapMagin = 0.0f;
     public SnapSides snapSides;
@@ -164,11 +164,7 @@ public class BuildManager: MonoBehaviour
 
                         DestroyImmediate(ghost);
 
-                        bl.buildingGameObject = (GameObject)Instantiate(Building[SelectedBuilding],
-                        new Vector3(hit[i].point.x,
-                            hit[i].point.y + Building[SelectedBuilding].GetComponent<CastlePlayer>().yoff + Building[SelectedBuilding].GetComponent<Collider>().transform.localScale.y / 2,
-                            hit[i].point.z),
-                        Quaternion.identity);
+                        bl.buildingGameObject = (GameObject)Instantiate(Building[SelectedBuilding], new Vector3(hit[i].point.x, hit[i].point.y + Building[SelectedBuilding].GetComponent<CastlePlayer>().yoff + Building[SelectedBuilding].GetComponent<Collider>().transform.localScale.y / 2, hit[i].point.z), Quaternion.identity);
 
                         string s = bl.buildingGameObject.name.Replace("(Clone)", "");
                         bl.buildingGameObject.name = s;
